@@ -1,0 +1,17 @@
+# Local MySQL for development:  docker compose up -d
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: clinic-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: root_change_me
+      MYSQL_DATABASE: clinic_db
+      MYSQL_USER: clinic_user
+      MYSQL_PASSWORD: change_me
+    ports:
+      - "3306:3306"
+    volumes:
+      - clinic_data:/var/lib/mysql
+volumes:
+  clinic_data:
