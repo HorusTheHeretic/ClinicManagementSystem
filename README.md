@@ -1,6 +1,6 @@
 # Clinic Management System
 
-A web-based clinic system built from the project draft (algorithms 1.1 to 1.8, the conceptual framework and the layered architecture).
+A web-based clinic system built to make managing daily clinic operations easier and more organized.
 
 | Layer | Technology |
 |---|---|
@@ -17,7 +17,7 @@ ClinicManagementSystem/
   docker-compose.yml     MySQL for local development
 ```
 
-## Run it
+## How to Run it
 
 You need the .NET 8 SDK (or newer), Node.js 18+, and MySQL 8 (or MariaDB 10.6+).
 
@@ -65,7 +65,7 @@ On first start the API creates an administrator and demo data (`Seed` section of
 | Billing and receipts | yes | yes | |
 | Reports | yes | | |
 
-## How the draft maps to the code
+## How the project draft maps to the code
 
 | Draft | Where |
 |---|---|
